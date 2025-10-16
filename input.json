@@ -1,0 +1,31 @@
+{
+    "simulation_parameters": {
+        "num_steps": 100,
+        "time_step_duration_s": 0.01
+    },
+    "physics_parameters": {
+        "ambient_temperature_C": 25.0,
+        "heat_transfer_coefficient": 50.0,
+        "strain_rate": 50000.0,
+        "strain_increment_per_step": 0.01
+    },
+    "material_properties": {
+        "name": "Titanium (Ti-6Al-4V)",
+        "density_kg_m3": 4430,
+        "specific_heat_J_kgC": 526.3,
+        "melting_point_C": 1660,
+        "A_yield_strength_MPa": 1098,
+        "B_strain_hardening_MPa": 1092,
+        "n_strain_hardening_exp": 0.93,
+        "C_strain_rate_coeff": 0.028,
+        "m_thermal_softening_exp": 1.1,
+        "failure_criterion": {
+            "ultimate_tensile_strength_MPa": 1150
+        }
+    },
+    "file_paths": {
+        "tool_geometry": "tool.stl",
+        "output_results": "output.json"
+    }
+}
+
